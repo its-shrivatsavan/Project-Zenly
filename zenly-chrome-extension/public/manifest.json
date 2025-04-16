@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Zenly AI Therapist",
+  "version": "1.0",
+  "description": "Your personal AI therapist inside Chrome",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Zenly AI Therapist",
+    "default_icon": {
+      "16": "icons/zenly-logo.png",
+      "48": "icons/zenly-logo.png",
+      "128": "icons/zenly-logo.png"
+    }
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "icons": {
+    "16": "icons/zenly-logo.png",
+    "48": "icons/zenly-logo.png",
+    "128": "icons/zenly-logo.png"
+  }
+}
