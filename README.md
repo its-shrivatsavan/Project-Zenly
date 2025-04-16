@@ -101,7 +101,7 @@ npm run build
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in both `zenly-backend/` and `zenly-chrome-extension/`:
+Create a `.env` file in both `zenly-backend/`:
 
 ### `.env` (for Django)
 ```
@@ -137,12 +137,12 @@ Session states persist and switch based on conversation flow.
 
 ---
 
-## ✨ Contributors
+## 👥 Team & Credits
+**Shrivatsavan S** – Project Lead, AI & Backend Engineer
+Led the project, built the AI engine, and implemented Django-based backend integration.
 
-- **Shrivatsavan S** – Creator & Full Stack Developer  
-- **ChatGPT** – Assistant & Logic Reviewer 😉
-
----
+**Siranjeevi B & Srivathsan A** – Frontend Developers
+Developed and styled the React-based UI components and chat interface.
 
 ## 📃 License
 
