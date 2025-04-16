@@ -139,10 +139,10 @@ Session states persist and switch based on conversation flow.
 
 ## 👥 Team & Credits
 **Shrivatsavan S** – Project Lead, AI & Backend Engineer
-- Led the project, built the AI engine, and implemented Django-based backend integration.
+> Led the project, built the AI engine, and implemented Django-based backend integration.
 
 **Siranjeevi B & Srivathsan A** – Frontend Developers
-- Developed and styled the React-based UI components and chat interface.
+> Developed and styled the React-based UI components and chat interface.
 
 ## 📃 License
 
