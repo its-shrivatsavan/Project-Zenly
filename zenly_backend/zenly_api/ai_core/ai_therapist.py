@@ -41,8 +41,6 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # AES-256 KEY
 AES_KEY = os.urandom(32)
 
-"""# Functions for Encryption and Decryption"""
-
 """
 FUNCTIONS FOR ENCRYPTION AND DECRYPTION
 """
@@ -352,28 +350,6 @@ def detect_anxiety(user_id, user_message):
     ]
 
     return any(keyword in user_message.lower() for keyword in anxiety_keywords) # True if these keywords are present, else False
-
-def suggest_breathing_video():
-    """
-    Suggests a breathing exercise video to help with stress relief.
-    """
-    video_links = [
-        "https://youtu.be/LiUnFJ8P4gM?si=SDZTO8sx11dfQ0nI",
-        "https://youtu.be/FJJazKtH_9I?si=BvDzHRADTJFa6c1E",
-        "https://youtu.be/0BNejY1e9ik?si=n4DKhsudJZg1E4W7&t=18",
-        "https://youtu.be/j-1n3KJR1I8?si=lxLeVqUbUt2hokbk"
-    ]
-    selected_videos = random.sample(video_links, 2)
-    response = (
-        "I hear that you're feeling overwhelmed, and you're not alone. "
-        "Deep breathing can help calm your mind and body by slowing your heart rate and easing tension.\n\n"
-        "Would you like to try a short guided breathing exercise? Here are two videos you can choose from:\n\n"
-        f"🔗 [Guided Breathing Exercise 1]({selected_videos[0]})\n"
-        f"🔗 [Guided Breathing Exercise 2]({selected_videos[1]})\n\n"
-        "Feel free to follow along at your own pace and see if it helps ease some of what you're feeling right now. 💙"
-    )
-
-    return response
 
 def get_user_consent():
     """
@@ -825,28 +801,28 @@ def analyze_moods_and_notes(mood_labels, notes):
     return response.choices[0].message.content
 
 
-def plot_mood_graph(timestamps, mood_values):
-    """
-    Plot a graph of the user's mood trend over time.
+# def plot_mood_graph(timestamps, mood_values):
+#     """
+#     Plot a graph of the user's mood trend over time.
 
-    Parameters:
-        timestamps (list): List of timestamps corresponding to mood entries.
-        mood_values (list): Numeric mood scores for plotting.
-    """
-    plt.figure(figsize=(10, 6))
-    plt.plot(timestamps, mood_values, marker='o', linestyle='-', color='black', label="Mood Trend")
+#     Parameters:
+#         timestamps (list): List of timestamps corresponding to mood entries.
+#         mood_values (list): Numeric mood scores for plotting.
+#     """
+#     plt.figure(figsize=(10, 6))
+#     plt.plot(timestamps, mood_values, marker='o', linestyle='-', color='black', label="Mood Trend")
 
-    # Set graph details
-    plt.title("Mood Trend Over Time", fontsize=14)
-    plt.xlabel("Date", fontsize=12)
-    plt.ylabel("Mood Score", fontsize=12)
-    plt.yticks(range(1, 7), ["Sad", "Angry", "Tired", "Neutral", "Anxious",  "Happy"])
-    plt.grid(alpha=0.5)
-    plt.legend()
+#     # Set graph details
+#     plt.title("Mood Trend Over Time", fontsize=14)
+#     plt.xlabel("Date", fontsize=12)
+#     plt.ylabel("Mood Score", fontsize=12)
+#     plt.yticks(range(1, 7), ["Sad", "Angry", "Tired", "Neutral", "Anxious",  "Happy"])
+#     plt.grid(alpha=0.5)
+#     plt.legend()
 
-    # Show the plot
-    plt.tight_layout()
-    plt.show()
+#     # Show the plot
+#     plt.tight_layout()
+#     plt.show()
 
 """# Functions for Journaling"""
 
